@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --background: #fff;
+    --foreground: #686868;
+    --primary: #F7941E;
+    --primary-foreground: #F7941E;
+    --secondary: #1CBBB4;
+    --secondary-foreground: #1CBBB4;
+    --destructive: #ED145B;
+    --destructive-foreground: #ED145B;
+    --green: #73BE48;
+    --green-foreground: #73BE48;
+    --warm: #FFF0E5;
+    --cream-foreground: #fff;
+    --muted: #000;
+    --muted-foreground: #000;
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    color: var(--muted-foreground);
+    line-height: 160%;
+    background-color: var(--background);
+}
