@@ -1,25 +1,318 @@
-@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "./base.css";
 
-:root {
-    --background: #fff;
-    --foreground: #686868;
-    --primary: #F7941E;
-    --primary-foreground: #F7941E;
-    --secondary: #1CBBB4;
-    --secondary-foreground: #1CBBB4;
-    --destructive: #ED145B;
-    --destructive-foreground: #ED145B;
-    --green: #73BE48;
-    --green-foreground: #73BE48;
-    --warm: #FFF0E5;
-    --cream-foreground: #fff;
-    --muted: #000;
-    --muted-foreground: #000;
+/************* .header **********  */
+.header .navbar-light .navbar-nav .nav-link {
+    color: var(--muted);
+    transition: all .3s;
 }
 
-body {
-    font-family: Nunito, sans-serif;
-    color: var(--muted-foreground);
-    line-height: 160%;
-    background-color: var(--background);
+.header .navbar-light .navbar-nav .nav-link:hover {
+    color: var(--primary);
+}
+
+.header .navbar-nav>.nav-item {
+    position: relative;
+    transition: all .3s;
+}
+
+.header .navbar-nav>.nav-item:hover .navbar-nav-sub {
+    animation: slideInUp .5s ease;
+    animation-fill-mode: both;
+    background: #fff;
+}
+
+.header .navbar-nav-sub {
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+}
+
+.header .navbar-nav-sub .nav-item {
+    min-width: 200px;
+    border-bottom: 1px solid rgba(203, 213, 225, .5);
+}
+
+.header .navbar-nav-sub .nav-item:last-child {
+    border-bottom: none;
+}
+
+.header .navbar-nav-sub .nav-link:hover {
+    transition: all .5s;
+    background-color: var(--primary);
+    color: var(--warm) !important;
+}
+
+
+
+/**************** .banner *******************/
+.banner {
+    padding-top: 100px;
+
+}
+
+/*********  .educationalPrograms    **************/
+.educationalPrograms .card .card-icon:hover {
+    background-color: var(--green);
+    transition: all .2s;
+}
+
+.educationalPrograms .card .card-icon:hover i {
+    color: #fff !important;
+}
+
+.educationalPrograms .card a:hover,
+.educationalPrograms .card .card-title:hover {
+    transition: all .2s;
+    color: var(--green);
+}
+
+/************* .lastestPortfolio  ********************/
+.lastestPortfolio .nav-link {
+    color: var(--foreground);
+    font-size: 20px;
+    font-family: Jost, sans-serif;
+}
+
+.lastestPortfolio .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: var(--primary);
+}
+
+.lastestPortfolio .tab-pane {
+    animation: slideInUp .5s;
+}
+
+.lastestPortfolio .item {
+    height: 100%;
+}
+
+.lastestPortfolio .item .item-content {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.lastestPortfolio .item:hover .item-content {
+    transition: all .5s;
+    opacity: 1;
+}
+
+/************* .lastestServices  ********************/
+.lastestServices .card {
+    background: transparent;
+    transition: all .5s;
+}
+
+.lastestServices .card:hover {
+    transition: all .5s;
+    background: #fff;
+}
+
+.lastestServices a:hover {
+    transition: all .5s;
+    color: var(--green);
+}
+
+.lastestServices .swiper-pagination {
+    left: 10px;
+    top: 0;
+    height: fit-content;
+    text-align: left;
+}
+
+
+
+.lastestServices .swiper-pagination-bullet {
+    width: 20px;
+    border-radius: 10px;
+    height: 5px;
+}
+
+.lastestServices .swiper-pagination-bullet-active {
+    width: 30px;
+    background: var(--secondary);
+}
+
+.lastestServices .swiper-slide.swiper-slide-active.card {
+    background: #fff;
+}
+
+.lastestServices .swiper-slide.swiper-slide-active .card-footer {
+    opacity: 1 !important;
+}
+
+/************* .someFaq  ********************/
+
+.someFaq .accordion-button::after {
+    display: none;
+}
+
+.someFaq .accordion-button .icon i:first-child,
+.someFaq .accordion-button:not(.collapsed) .icon i:last-child {
+    display: none;
+}
+
+.someFaq .accordion-button .icon i:last-child,
+.someFaq .accordion-button:not(.collapsed) .icon i:first-child {
+    display: block;
+}
+
+.someFaq .accordion-button:not(.collapsed) .icon {
+    background: var(--secondary) !important;
+}
+
+/************* .ourProfessional  ********************/
+
+.ourProfessional .card {
+    border: 1px solid transparent;
+    transition: all .5s;
+    border-radius: 50px 10px 50px 10px;
+
+}
+
+.ourProfessional .card:hover {
+    transition: all .5s;
+    border: 1px solid var(--green);
+}
+
+.ourProfessional .card-img {
+    transition: all .5s;
+    border-radius: 50px 10px 50px 10px;
+}
+
+.ourProfessional .card-img:hover {
+    transition: all .5s;
+    border-radius: 10px 50px 10px 50px;
+}
+
+.ourProfessional ul li a {
+    transition: all .5s;
+
+}
+
+.ourProfessional ul li a:hover {
+    background: var(--destructive) !important;
+}
+
+/************* .lastestBlog  ********************/
+.lastestBlog a {
+    transition: all .5s;
+}
+
+.lastestBlog a:hover {
+    transition: all .5s;
+    color: var(--secondary) !important;
+}
+
+/************* .getConnected  ********************/
+.getConnected .overlay {
+    background-image: url('../img/newsletter/bg-img.png');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.getConnected .avatar {
+    background-image: url('../img/shapes/egg-shap.png');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/************* .getConnected  ********************/
+.footer .list-pages a {
+    color: var(--foreground);
+    transition: all .5s;
+}
+
+.footer .list-pages a:hover {
+    color: var(--primary);
+    transition: all .5s;
+    margin-left: 5px;
+}
+
+/************ responsive *************/
+.header-menu .btn-close {
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+
+
+.header-menu .nav-menu-mobile li {
+    border-bottom: 1px solid #b1aaaa;
+}
+
+.header-menu .nav-menu-mobile .collapse.show li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.header-menu .nav-menu-mobile li {
+    padding: 10px 0px;
+}
+
+/* Desktop first */
+/* Laptop */
+@media (max-width:1440px) {}
+
+/* Tablet ngang  */
+@media(max-width:1024px) {
+    .title h2 {
+        font-size: 1.75rem !important;
+    }
+
+    .educationalPrograms .decor-1 {
+        top: 30px !important;
+    }
+
+    .educationalPrograms .decor-1 img {
+        width: 150px !important;
+    }
+
+    .educationalPrograms .card-icon {
+        position: static !important;
+        transform: translateY(0) !important;
+    }
+
+    .lastestServices {
+        background: var(--warm);
+    }
+
+    .studentKnowledge .decor-1 {
+        top: 20px !important;
+        right: 20px !important;
+    }
+
+    .studentKnowledge .decor-1 img {
+        width: 150px !important;
+    }
+
+    .studentKnowledge .year-1-2 {
+        max-width: 200px !important;
+        max-height: 200px !important;
+        padding: 40px !important;
+    }
+
+    .testimonial .decor-1 {
+        width: 80% !important;
+    }
+}
+
+/* Tablet dọc */
+@media(max-width: 768px) {
+    .title h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Mobile */
+@media (max-width:480px) {
+    .swiper-slide {
+        width: 100% !important;
+    }
+
+    .lastestBlog .card-img-wrapper {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
 }
