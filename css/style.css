@@ -219,15 +219,33 @@
 }
 
 /************* .getConnected  ********************/
-.footer .list-pages a {
-    color: var(--foreground);
+.footer .anim-left a {
     transition: all .5s;
+    transform: translateX(0);
+    display: inline-block;
 }
 
-.footer .list-pages a:hover {
-    color: var(--primary);
+.footer .anim-left a:hover {
+    color: var(--primary) !important;
     transition: all .5s;
-    margin-left: 5px;
+    transform: translateX(10px);
+}
+
+.footer-2 p,
+.footer-2 {
+    color: #fff;
+}
+
+.footer-2 {
+    background: #0A6375;
+}
+
+.footer-2 .list-pages a {
+    color: #Fff;
+}
+
+.footer-2 input::placeholder {
+    color: #fff;
 }
 
 /************ responsive *************/
