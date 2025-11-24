@@ -31,6 +31,14 @@ rounded-3	0.5rem	8px
 rounded-4	1rem	16px
 rounded-5	2rem	32px
 rounded (default)	0.25rem	4px
+
+Extra small
+<576px	Small
+≥576px sm	Medium
+≥768px md	Large
+≥992px lg	X-Large
+≥1200px xl	XX-Large
+≥1400px
 */
 :root {
     --background: #fff;
@@ -132,6 +140,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-nunito {
     font-family: Nunito, sans-serif;
+}
+
+.font-jost {
+    font-family: Jost, sans-serif;
 }
 
 .shadow {
@@ -291,9 +303,21 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--green);
 }
 
+.btn-outline-primary {
+    border: 1px solid var(--primary);
+}
+
+.btn-outline-primary:hover,
 .btn-outline-secondary:hover {
     color: #fff !important;
     background: transparent !important;
+}
+
+.btn-primary:hover {
+    transition: all .5s;
+    background: transparent !important;
+    border: 1px solid var(--primary) !important;
+    color: var(--primary) !important;
 }
 
 .btn-destructive:hover {

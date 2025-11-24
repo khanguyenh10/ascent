@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascentt </title>
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SVG Icon -->
+    <link rel="stylesheet" href="./css/icon/style.css">
+    <!-- Thêm Animate.css từ CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!--B1: Chèn thư viện (css [trên thẻ heade] và js [trước khi đóng thẻ body])-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--Backtotop CSS -->
+    <link rel="stylesheet" href="./css/backtoTop.css">
+    <!-- Thêm WOW.js từ CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- about.css -->
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top bg-destructive d-none d-md-block">
+            <div class="container">
+                <ul class="py-2 list-unstyled d-flex gap-3 text-white m-0">
+                    <li>
+                        <a href="tel:(629) 555-0129">(629) 555-0129</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li>
+                        6391 Elgin St. Celina, 10299
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-menu">
+            <nav class="navbar py-3 navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand fs-3 fw-bold" href="#">
+                        <img src="./img/logo.png" alt="...">
+                        <span>Ascent</span>
+                    </a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav gap-2 ms-auto me-5 pe-3 mb-lg-0 fw-bold d-none d-xl-flex">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                                <ul class="navbar-nav-sub list-unstyled shadow-lg">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./services.html">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./service-details.html">Service Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                                <ul class="navbar-nav-sub list-unstyled shadow-lg">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./blog.html">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./blog.html">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                                <ul class="navbar-nav-sub list-unstyled shadow-lg">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./services.html">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./service-details.html">Service Details</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./faq.html">Faq</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./Learn.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="./contact.html"
+                                class="btn px-4 py-2_5 bg-secondary text-white btn-animate btn-animate-secondary">Get a
+                                Quote</a>
+                        </div>
+
+                    </div>
+                    <div class="d-flex gap-3 align-items-center">
+                        <div>
+                            <a href="./contact.html"
+                                class="btn px-4 py-2_5 bg-secondary text-white btn-animate btn-animate-secondary d-none d-sm-block  d-lg-none">Get
+                                a
+                                Quote</a>
+                        </div>
+                        <button class="navbar-toggler border-0  d-flex flex-column align-items-end d-xl-none "
+                            type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                            aria-controls="offcanvasExample">
+                            <span class="bg-muted mb-1" style="height: 3px; width: 20px;"></span>
+                            <span class="bg-muted mb-1" style="height: 3px; width: 30px;"></span>
+                            <span class="bg-muted mb-1" style="height: 3px; width: 20px;"></span>
+                        </button>
+                    </div>
+
+
+                </div>
+            </nav>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="" class="d-flex align-items-center gap-1">
+                                <img src="./img/logo.png" alt="img">
+                                <span class="fs-3 fw-bold  ">Ascent</span>
+                            </a>
+
+                        </div>
+                    </h5>
+                    <button type="button" class="btn-close bg-transparent" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        <div style="width: 40px; height: 40px;"
+                            class="bg-primary  text-cream-foreground d-flex align-items-center justify-content-center rounded-2 offcanvaClose">
+                            <i class="fa-solid fa-xmark text-xl"></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="list-unstyled nav-menu-mobile">
+                        <li><a href="#" class="d-flex justify-content-between align-items-center">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li><a href="./about.html" class="d-flex justify-content-between align-items-center">
+                                <span>About us</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu"> <a class="d-flex justify-content-between align-items-center"
+                                data-bs-toggle="collapse" href="#Services" aria-expanded="false"
+                                aria-controls="Services">
+                                <span>
+                                    Services
+                                </span>
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                            <div class="collapse " id="Services">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./services.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Services</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./service-details.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Service Details</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li> <a class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                href="#Blog" aria-expanded="false" aria-controls="Blog">
+                                <span>
+                                    Blog
+                                </span>
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                            <div class="collapse " id="Blog">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./blog.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Blog</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./blog-details.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Blog Details</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li> <a class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                href="#Page" aria-expanded="false" aria-controls="Page">
+                                <span>
+                                    Page
+                                </span>
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                            <div class="collapse " id="Page">
+                                <ul class="list-unstyled">
+                                    <li><a href="./about.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>About us</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./services.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Services</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./service-details.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Service Details</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./portfolio.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Portfolio</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./faq.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Faqs</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="d-flex justify-content-between align-items-center">
+                                <span>Contact us</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <div>
+                            <h4 class="fs-5 fw-bold " style="color: #385469;">Contact Info</h4>
+                            <ul class="mt-3 d-flex flex-column gap-3 list-unstyled">
+                                <li>
+                                    <p>
+                                        <i class="fa-solid fa-phone text-primary-foreground"></i> <a href=""
+                                            class="ml-2.5">(629) 555-0129</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa-solid fa-envelope text-primary-foreground"></i> <a href=""
+                                            class="ml-2.5">info@example.com</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa-solid fa-location-dot text-primary-foreground"></i> <span
+                                            class="ml-2.5">6391 Elgin St. Celina, 10299</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-3">
+                            <a href="" class="bg-primary text-cream-foreground rounded-3 text-center w-100 btn">
+                                Get A Quote <span><i class="fa-solid fa-arrow-right"></i></span> </a>
+                        </div>
+                        <ul class="d-flex align-items-center gap-3 mt-4 list-unstyled">
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-facebook-f "></i></a></li>
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="banner py-5 bg-warm position-relative z-0 breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <h1 class="display-2 fw-bold">About Us</h1>
+                    <ul class="list-unstyled d-flex gap-4">
+                        <li><a href="" class="fs-3 fw-bold text-muted-foreground">Home</a></li>
+                        <li><a href="" class="fs-3  fw-bold text-muted-foreground">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-4"></div>
+                <div class="col-xl-4">
+                    <div class="position-relative">
+                        <img src="./img/shapes/bread-cat.png" alt="cat-img" class="position-absolute   animate-up-down"
+                            style="left: -30px; bottom: 1.25rem;">
+                        <img src="./img/shapes/bread-thumb.png" alt="thumb-img" class="">
+                        <img src="./img/shapes/bread-child.png" alt="child-img"
+                            class="position-absolute bottom-0 right-0 animate-left-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutUs py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-7 pe-md-5">
+                    <div class="d-flex flex-wrap align-items-end gap-4">
+                        <div class="position-relative">
+                            <div class="">
+                                <img src="./img/about/shap-1.png" alt="shap">
+                            </div>
+                            <div class="ms-5">
+                                <img src="./img/about/about-1.png" alt="about-bg" class="w-100">
+                            </div>
+                            <div class="position-absolute   left-0 bg-primary rounded-3 py-2 px-4 d-flex align-items-center gap-3"
+                                style="bottom: -50px;">
+                                <div style="width: 44px; height: 44px;"
+                                    class="bg-background  rounded-circle d-flex justify-content-center align-items-center">
+                                    <img src="./img/about/customer.png" alt="customer">
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 text-cream-foreground font-bold fs-4">5,000+</h6>
+                                    <p class="mb-0 text-cream-foreground">Satisfied Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 d-sm-block">
+                            <div class="card border-0 bg-warm rounded-4">
+                                <div class="card-body text-center">
+                                    <img src="./img/about/icreement.png" alt="icreement">
+                                    <h4 class="card-title mb-0 mt-2 fw-bold fs-5">Academy</h4>
+                                    <p class="card-text ">Learning Ladder School</p>
+                                </div>
+                            </div>
+                            <div class="card border-0 shadow mt-sm-3">
+                                <div class="card-body">
+                                    <h6 class="fs-2 fw-bold text-secondary mb-0">10+</h6>
+                                    <p class="mb-0">Learning Ladder School
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-5 mt-4 mt-xl-0">
+                    <div class="title" style="max-width: 439px;">
+                        <p class="mb-0 text-secondary">About Us</p>
+                        <h2>Unlocking Potential, One Child at a just Time in school</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet
+                        massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet
+                        lectus mi ultricies dictum</p>
+                    <div class="mt-3">
+                        <button class="btn px-4 py-2_5 bg-white text-dark btn-animate btn-animate-green">Get
+                            a
+                            Quote</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ourPricing py-5">
+        <div class="container">
+            <div class="flex-center">
+                <div class="title" style="max-width: 439px;">
+                    <p class="mb-0 text-secondary">About Us</p>
+                    <h2>Unlocking Potential, One Child at a just Time in school</h2>
+                </div>
+            </div>
+            <div class="row mt-4 gx-0">
+                <div class="col-md-6 col-xl-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-header border-0 bg-warm fs-3 text-center py-3 fw-bold">Stater Plan</div>
+                        <div class="card-body border-0">
+                            <h4 class="card-title fw-bold font-jost">
+                                <span class="display-2 text-green fw-bold">$19</span>/mo
+                            </h4>
+                            <ul class=" pt-4 d-flex gap-3 flex-column">
+                                <li class="d-flex align-items-center gap-5"><i
+                                        class="fa-solid fa-angles-right text-secondary-foreground text-sm"></i>
+                                    <span>Mistakes To Avoid</span> </li>
+                                <li class="d-flex align-items-center gap-5"><i
+                                        class="fa-solid fa-angles-right text-secondary-foreground text-sm"></i>
+                                    <span>Your Startup</span> </li>
+                                <li class="d-flex align-items-center gap-5"> <span
+                                        style="width: 16px;height: 16px; font-size: 10px;"
+                                        class="rounded-circle d-flex align-items-center justify-content-center bg-warm"><i
+                                            class="fa-solid fa-xmark "></i></span> <span>Knew About
+                                        Fonts</span> </li>
+                                <li class="d-flex align-items-center gap-5"> <span
+                                        style="width: 16px;height: 16px; font-size: 10px;"
+                                        class="rounded-circle d-flex align-items-center justify-content-center bg-warm"><i
+                                            class="fa-solid fa-xmark "></i></span> <span>Winning Metric for
+                                        Your Startup</span> </li>
+                                <li class="d-flex align-items-center gap-5"> <span
+                                        style="width: 16px;height: 16px; font-size: 10px;"
+                                        class="rounded-circle d-flex align-items-center justify-content-center bg-warm"><i
+                                            class="fa-solid fa-xmark "></i></span> <span>Your Startup</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer border-0 text-muted bg-white text-center pb-5">
+                            <button
+                                class="btn px-4 py-2_5 btn-outline-primary text-dark btn-animate btn-animate-green">Buy
+                                now</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-header border-0 bg-primary fs-3 text-center py-3 fw-bold ">Golden Plan</div>
+                        <div class="card-body border-0">
+                            <h4 class="card-title fw-bold font-jost">
+                                <span class="display-2 text-green fw-bold">$39</span>/mo
+                            </h4>
+                            <ul class=" pt-4 d-flex gap-3 flex-column">
+                                <li class="d-flex align-items-center gap-5"><i
+                                        class="fa-solid fa-angles-right text-secondary-foreground text-sm"></i>
+                                    <span>Mistakes To Avoid</span> </li>
+                                <li class="d-flex align-items-center gap-5"><i
+                                        class="fa-solid fa-angles-right text-secondary-foreground text-sm"></i>
+                                    <span>Your Startup</span> </li>
+                                <li class="d-flex align-items-center gap-5"> <span
+                                        style="width: 16px;height: 16px; font-size: 10px;"
+                                        class="rounded-circle d-flex align-items-center justify-content-center bg-warm"><i
+                                            class="fa-solid fa-xmark "></i></span> <span>Knew About
+                                        Fonts</span> </li>
+                                <li class="d-flex align-items-center gap-5"> <span
+                                        style="width: 16px;height: 16px; font-size: 10px;"
+                                        class="rounded-circle d-flex align-items-center justify-content-center bg-warm"><i
+                                            class="fa-solid fa-xmark "></i></span> <span>Winning Metric for
+                                        Your Startup</span> </li>
+                                <li class="d-flex align-items-center gap-5"> <span
+                                        style="width: 16px;height: 16px; font-size: 10px;"
+                                        class="rounded-circle d-flex align-items-center justify-content-center bg-warm"><i
+                                            class="fa-solid fa-xmark "></i></span> <span>Your Startup</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer border-0 text-muted bg-white text-center pb-5">
+                            <button class="btn px-4 py-2_5 bg-primary  text-white btn-animate btn-animate-green">Buy
+                                now</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-header border-0 bg-warm fs-3 text-center py-3 fw-bold">Platinum Plan</div>
+                        <div class="card-body border-0">
+                            <h4 class="card-title fw-bold font-jost">
+                                <span class="display-2 text-green fw-bold">$79</span>/mo
+                            </h4>
+                            <ul class=" pt-4 d-flex gap-3 flex-column">
+                                <li class="d-flex align-items-center gap-5"><i
+                                        class="fa-solid fa-angles-right text-secondary-foreground text-sm"></i>
+                                    <span>Mistakes To Avoid</span> </li>
+                                <li class="d-flex align-items-center gap-5"><i
+                                        class="fa-solid fa-angles-right text-secondary-foreground text-sm"></i>
+                                    <span>Your Startup</span> </li>
+                                <li class="d-flex align-items-center gap-5"> <span
+                                        style="width: 16px;height: 16px; font-size: 10px;"
+                                        class="rounded-circle d-flex align-items-center justify-content-center bg-warm"><i
+                                            class="fa-solid fa-xmark "></i></span> <span>Knew About
+                                        Fonts</span> </li>
+                                <li class="d-flex align-items-center gap-5"> <span
+                                        style="width: 16px;height: 16px; font-size: 10px;"
+                                        class="rounded-circle d-flex align-items-center justify-content-center bg-warm"><i
+                                            class="fa-solid fa-xmark "></i></span> <span>Winning Metric for
+                                        Your Startup</span> </li>
+                                <li class="d-flex align-items-center gap-5"> <span
+                                        style="width: 16px;height: 16px; font-size: 10px;"
+                                        class="rounded-circle d-flex align-items-center justify-content-center bg-warm"><i
+                                            class="fa-solid fa-xmark "></i></span> <span>Your Startup</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer border-0 text-muted bg-white text-center pb-5">
+                            <button
+                                class="btn px-4 py-2_5 btn-outline-primary text-dark btn-animate btn-animate-green">Buy
+                                now</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="testimonial py-5 position-relative">
+        <div class="container position-relative">
+            <div class="row gx-5">
+                <div class="col-xl-4">
+                    <div class="title" style="max-width: 630px;">
+                        <p class="mb-0 text-secondary">Clients Testimonial</p>
+                        <h2>Unlocking the Power of Wonderworks Child</h2>
+                    </div>
+                </div>
+                <div class="col-xl-2"></div>
+                <div class="col-xl-6 mt-4">
+                    <p>Use receiving accounts a number a currencies and get paid like a local Use receivin accounts a
+                        number paid the most beautiful think</p>
+                </div>
+            </div>
+            <div class="position-relative mt-5">
+                <div class="row gx-5">
+                    <div class="col-xl-6 ">
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="swiper" id="testimonialSwiper">
+                            <div class="swiper-wrapper p-sm-5">
+                                <div class="card border-0 rounded-3 p-4 shadow   swiper-slide">
+                                    <div class="card-body  ">
+                                        <div class="d-flex justify-content-between align-items-center position-relative pb-5"
+                                            style="z-index: 0;">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="./img/testimonial/user-1.png" alt="bg-img">
+                                                <div>
+                                                    <h5 class="fs-3 fw-semibold">Shakib Al Hasan</h5>
+                                                    <p class="mb-0">Marketing Manager</p>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute end-0" style="z-index: -1;">
+                                                <img src="./img/testimonial/quotation.png" alt="quotation" class="w-75">
+                                            </div>
+                                        </div>
+                                        <p>Their product exceeded his my routi expectations. The the quality and
+                                            attention to detail a the a most outstanding and it has become an essential
+                                            most a education the man who can do </p>
+                                    </div>
+
+                                </div>
+                                <div class="card border-0 rounded-3 p-4  shadow   swiper-slide">
+                                    <div class="card-body  ">
+                                        <div class="d-flex justify-content-between align-items-center position-relative pb-5"
+                                            style="z-index: 0;">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="./img/testimonial/user-1.png" alt="bg-img">
+                                                <div>
+                                                    <h5 class="fs-3 fw-semibold">Shakib Al Hasan</h5>
+                                                    <p class="mb-0">Marketing Manager</p>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute end-0" style="z-index: -1;">
+                                                <img src="./img/testimonial/quotation.png" alt="quotation" class="w-75">
+                                            </div>
+                                        </div>
+                                        <p>Their product exceeded his my routi expectations. The the quality and
+                                            attention to detail a the a most outstanding and it has become an essential
+                                            most a education the man who can do </p>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-absolute bg-warm rounded-4 top-0 start-0 decor-1"
+                    style="z-index: -1; width: calc(100% - 420px); height: calc(100%);">
+                    <img src="./img/testimonial/bg-img.png" class="w-100 h-100 object-cover rounded-3" alt="">
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="stayWithUs py-5 bg-warm  position-relative z-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <div class="title" style="max-width: 630px;">
+                        <p class="mb-0 text-dark">Stay With Us</p>
+                        <h2>The path to success starts with educationd</h2>
+                    </div>
+                    <p class="my-4">Lorem ipsum dolor sit amet consectetur adipiscing elit platea pharetra, nostra
+                        mattis hendrerit proin mollis pretium facilisi in, ligula volutpat</p>
+                    <button class="btn px-4 py-2_5 rounded-pill bg-primary text-white btn-primary border-primary">Learn
+                        More</button>
+                </div>
+                <div class="col-xl-3"></div>
+                <div class="col-xl-3">
+                    <img src="./img/newsletter/stay-thumb.png" alt="tree-img">
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute start-0 bottom-0 " style="z-index: -1;">
+            <img src="./img/newsletter/stay-shape.png" alt="stay-shape">
+        </div>
+    </section>
+    <section class="footer pt-5 footer-2 position-relative z-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xl-4">
+                    <a href="" class="flex items-center gap-1">
+                        <img src="./img/logo.png" alt="img">
+                        <span class="fw-bold fs-2 ">Ascent</span>
+                    </a>
+                    <p class="mt-3">Yes, there are many notable ma corporate the a od businesses Informati worldwide
+
+                    </p>
+                </div>
+                <div class="d-none d-xl-block col-xl-1"></div>
+
+                <div class="col-sm-6 col-xl-3">
+                    <h3 class="fw-semibold">Pages</h3>
+                    <ul class="d-flex flex-column gap-3 pt-3 list-unstyled list-pages">
+                        <li><a href="" class="">About Us</a></li>
+                        <li><a href="" class="">Latest Service</a></li>
+                        <li><a href="" class="">Latest Blog And News</a></li>
+                        <li><a href="" class="">FAQ</a></li>
+                        <li><a href="" class="">Our Creative Team Member</a></li>
+                    </ul>
+                </div>
+                <div class="d-none d-xl-block col-xl-1"></div>
+                <div class="col-sm-6 col-xl-3">
+                    <h3 class="fw-semibold">Contact</h3>
+                    <ul class="d-flex flex-column gap-3 pt-3 list-unstyled">
+                        <li>
+                            <p class="d-flex  align-items-center gap-4">
+                                <span style="width: 44px; height: 44px;"
+                                    class="rounded-circle border  d-flex justify-content-center align-items-center text-green-foreground"><i
+                                        class="fa-solid fa-location-dot"></i></span> <span class="">1179
+                                    KFC Road, Lisbon, Portugal</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="d-flex  align-items-center gap-4">
+                                <span style="width: 44px; height: 44px;"
+                                    class="rounded-circle border  d-flex justify-content-center align-items-center text-green-foreground"><i
+                                        class="fa-solid fa-envelope"></i></span> <a
+                                    href="mailto:Sakib23@gmail.com">Sakib23@gmail.com</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="d-flex  align-items-center gap-4">
+                                <span style="width: 44px; height: 44px;"
+                                    class="rounded-circle border  d-flex justify-content-center align-items-center  text-green-foreground"><i
+                                        class="fa-solid fa-phone"></i></span> <a
+                                    href="tel:012547892354">012547892354</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row mt-5 pb-4">
+                <div class="col-xl-6">
+                    <p>© Yoursitename 2024 | All Rights Reserved</p>
+                </div>
+                <div class="col-xl-6">
+                    <ul
+                        class="d-flex   justify-content-xl-end align-items-center gap-2 gap-sm-5  fadeInRight list-unstyled">
+                        <li><a href="">Trams &amp; Condition</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute  top-50 absolute-y-center start-50 ">
+            <img src="./img/shapes/scissors.svg" alt="img">
+        </div>
+        <div class="position-absolute  top-50 absolute-y-center animate-up-down" style="right: 68px;">
+            <img src="./img/shapes/apple.svg" alt="img">
+        </div>
+    </section>
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous">
+    </script>
+    <!--thư viện Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/carousel-swiper.js"></script>
+    <!-- BacktoTop -->
+    <script src="./js/backtoTop/util.js"></script>
+    <script src="./js/backtoTop/main.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
