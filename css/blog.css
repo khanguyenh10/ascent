@@ -1,0 +1,4 @@
+.content a:hover {
+    transition: all .5s;
+    color: var(--secondary);
+}
