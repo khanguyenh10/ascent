@@ -97,3 +97,6 @@ var swiper = new Swiper("#testimonialSwiper", {
         },
     },
 });
+new WOW({
+    animateClass: 'animate__animated'
+}).init();
