@@ -32,8 +32,8 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-top bg-destructive d-none d-md-block">
+    <header class="header" id="header">
+        <div class="header-top bg-destructive d-none d-md-block" id="top-header">
             <div class="container">
                 <ul class="py-2 list-unstyled d-flex gap-3 text-white m-0">
                     <li>
@@ -315,16 +315,19 @@
     <section class="banner py-5 bg-warm position-relative z-0 breadcrumb mb-5">
         <div class="container">
             <div class="row align-items-center ">
-                <div class="col-xl-5">
-                    <h1 class="display-2 fw-bold">Blog details</h1>
-                    <ul class="list-unstyled d-flex gap-4">
-                        <li><a href="" class="fs-3 fw-bold text-muted-foreground">Home</a></li>
-                        <li><a href="" class="fs-3  fw-bold text-muted-foreground">Blog details</a></li>
-                    </ul>
+                <div class="col-md-5">
+                    <div class="d-flex flex-column flex-xm-row align-items-center">
+                        <h1 class="display-2 fw-bold">Blog details</h1>
+                        <ul class="list-unstyled d-flex gap-4">
+                            <li><a href="" class="fs-3 fw-bold text-muted-foreground">Home</a></li>
+                            <li><a href="" class="fs-3  fw-bold text-muted-foreground">Blog details</a></li>
+                        </ul>
+                    </div>
+
                 </div>
 
-                <div class="col-xl-3"></div>
-                <div class="col-xl-4">
+                <div class="col-md-3"></div>
+                <div class="col-md-4">
                     <div class="position-relative">
                         <img src="./img/shapes/bread-cat.png" alt="cat-img" class="position-absolute   animate-up-down"
                             style="left: -30px; bottom: 1.25rem;">
@@ -343,7 +346,7 @@
                     <div>
                         <div class="content  ">
                             <img src="./img/blog/blog-details-1.png" alt="blog-img-1" class="w-100 card-img-top">
-                            <div class=" d-flex justify-items-center gap-5 mt-4">
+                            <div class=" d-flex justify-items-center gap-3 gap-md-5 mt-4 flex-wrap">
                                 <p class="ms-3">January 19, 2024 </p>
                                 <p>By admin
                                 </p>
@@ -394,7 +397,7 @@
                                         laoreet</p>
                                     <div class="mt-4">
                                         <div class="row ">
-                                            <div class="col-xl-6 mb-3">
+                                            <div class="col-md-6 mb-3">
                                                 <div class="d-flex align-items-center gap-2"> <span
                                                         style="width: 16px;height: 16px;"
                                                         class=" rounded-circle d-flex align-items-center justify-content-center bg-destructive text-cream-foreground"><i
@@ -403,7 +406,7 @@
                                                     Knowledge is the
                                                     key education is the door</div>
                                             </div>
-                                            <div class="col-xl-6 mb-3">
+                                            <div class="col-md-6 mb-3">
                                                 <div class="d-flex align-items-center gap-2"> <span
                                                         style="width: 16px;height: 16px;"
                                                         class=" rounded-circle d-flex align-items-center justify-content-center bg-destructive text-cream-foreground"><i
@@ -412,7 +415,7 @@
                                                     Discover the power
                                                     of education.</div>
                                             </div>
-                                            <div class="col-xl-6 mb-3">
+                                            <div class="col-md-6 mb-3">
                                                 <div class="d-flex align-items-center gap-2"> <span
                                                         style="width: 16px;height: 16px;"
                                                         class=" rounded-circle d-flex align-items-center justify-content-center bg-destructive text-cream-foreground"><i
@@ -421,7 +424,7 @@
                                                     Education opens
                                                     doors to opportunities, fosters </div>
                                             </div>
-                                            <div class="col-xl-6 mb-3">
+                                            <div class="col-md-6 mb-3">
                                                 <div class="d-flex align-items-center gap-2"> <span
                                                         style="width: 16px;height: 16px;"
                                                         class=" rounded-circle d-flex align-items-center justify-content-center bg-destructive text-cream-foreground"><i
@@ -447,9 +450,9 @@
                                 <a href="#" class="text-foreground bg-warm px-2 py-1 rounded-3">Smart Academy</a>
                             </div>
                         </div>
-                        <div class="mt-5 d-flex flex-xl-row flex-col gap-5 justify-content-between aligns-items-center pt-4 pb-4 border border-start-0 border-end-0"
+                        <div class="mt-5 d-flex flex-md-row flex-column gap-5 justify-content-md-between align-items-center pt-4 pb-4 border border-start-0 border-end-0"
                             style="border-color: #f2f2f2;">
-                            <a href="" class="fs-5 fw-bold  d-flex gap-2 align-items-center font-jost ">
+                            <a href="" class="fs-5 fw-bold  d-flex gap-2 align-items-center font-jost  ">
                                 <span class=""><i class="fa-solid fa-angle-left"></i></span> Previous post</a>
                             <ul class="d-flex items-center gap-3 list-unstyled ">
                                 <li><a href="" style="width: 40px; height: 40px;"
@@ -505,7 +508,7 @@
 
                 </div>
                 <div class="col-xl-4 mb-4">
-                    <div class="card p-5 border-0 shadow-sm  mb-5 ">
+                    <div class="card p-3 p-lg-5 border-0 shadow-sm  mb-5 ">
                         <img src="./img/blog/user.png" alt="user img" width="120">
                         <div class="card-body p-0 mt-3">
                             <h4 class="card-title font-nunito fw-bold">Nafiz Bhuiyan</h4>
@@ -535,7 +538,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="card p-5 border-0 shadow-sm  mb-5 ">
+                    <div class="card p-3 p-lg-5 border-0 shadow-sm  mb-5 ">
                         <div class="card-body p-0">
                             <h4 class="card-title font-nunito fw-bold fs-3">Search<span class="text-secondary">_</span>
                             </h4>
@@ -543,7 +546,7 @@
                                 class="rounded-3 mt-4 border border-secondary-subtle  ps-3 py-3  w-100 ">
                         </div>
                     </div>
-                    <div class="card p-5 border-0 shadow-sm  mb-5 ">
+                    <div class="card p-3 p-lg-5 border-0 shadow-sm  mb-5 ">
                         <div class="card-body p-0">
                             <h4 class="card-title font-nunito fw-bold fs-3">Category<span
                                     class="text-secondary">_</span> </h4>
@@ -567,7 +570,7 @@
 
                         </div>
                     </div>
-                    <div class="card p-5 border-0 shadow-sm  mb-5 ">
+                    <div class="card p-3 p-lg-5 border-0 shadow-sm  mb-5 ">
                         <div class="card-body p-0">
                             <h4 class="card-title font-nunito fw-bold fs-3">Recent post<span
                                     class="text-secondary">_</span>
@@ -601,7 +604,7 @@
 
                         </div>
                     </div>
-                    <div class="card p-5 border-0 shadow-sm  mb-5 ">
+                    <div class="card p-3 p-lg-5 border-0 shadow-sm  mb-5 ">
                         <div class="card-body p-0">
                             <h4 class="card-title font-nunito fw-bold fs-3">Tags<span class="text-secondary">_</span>
                             </h4>

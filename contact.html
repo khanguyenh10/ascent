@@ -29,8 +29,8 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-top bg-destructive d-none d-md-block">
+    <header class="header" id="header">
+        <div class="header-top bg-destructive d-none d-md-block" id="top-header">
             <div class="container">
                 <ul class="py-2 list-unstyled d-flex gap-3 text-white m-0">
                     <li>
@@ -312,16 +312,18 @@
     <section class="banner py-5 bg-warm position-relative z-0 breadcrumb">
         <div class="container">
             <div class="row align-items-center ">
-                <div class="col-xl-4">
-                    <h1 class="display-2 fw-bold">Contact Us</h1>
-                    <ul class="list-unstyled d-flex gap-4">
-                        <li><a href="" class="fs-3 fw-bold text-muted-foreground">Home</a></li>
-                        <li><a href="" class="fs-3  fw-bold text-muted-foreground">Contact Us</a></li>
-                    </ul>
+                <div class="col-md-5">
+                    <div class="d-flex flex-column flex-xm-row align-items-center">
+                        <h1 class="display-2 fw-bold">Contact Us</h1>
+                        <ul class="list-unstyled d-flex gap-4">
+                            <li><a href="" class="fs-3 fw-bold text-muted-foreground">Home</a></li>
+                            <li><a href="" class="fs-3  fw-bold text-muted-foreground">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="col-xl-4"></div>
-                <div class="col-xl-4">
+                <div class="col-md-3"></div>
+                <div class="col-md-4">
                     <div class="position-relative">
                         <img src="./img/shapes/bread-cat.png" alt="cat-img" class="position-absolute   animate-up-down"
                             style="left: -30px; bottom: 1.25rem;">
@@ -336,7 +338,7 @@
     <section class="info py-5">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4 mb-4">
+                <div class="col-md-6 col-xl-4 mb-4">
                     <div class="card shadow-lg border-0 text-center">
                         <div class="card-body">
                             <div style="width: 64px; height: 64px;"
@@ -352,7 +354,7 @@
                     </div>
 
                 </div>
-                <div class="col-xl-4 mb-4">
+                <div class="col-md-6 col-xl-4 mb-4">
                     <div class="card shadow-lg border-0 text-center">
                         <div class="card-body">
                             <div style="width: 64px; height: 64px;"
@@ -366,7 +368,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 mb-4">
+                <div class="col-md-6 col-xl-4 mb-4">
                     <div class="card shadow-lg border-0 text-center">
                         <div class="card-body">
                             <div style="width: 64px; height: 64px;"
