@@ -1,0 +1,14 @@
+.content a:hover {
+    transition: all .5s;
+    color: var(--secondary);
+}
+
+.content .pagination li:hover {
+    transition: all .5s;
+    background: var(--secondary);
+}
+
+.content .pagination li:hover a {
+    transition: all .5s;
+    color: #fff;
+}

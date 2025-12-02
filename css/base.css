@@ -154,6 +154,30 @@ h1, h2, h3, h4, h5, h6 {
     white-space: nowrap;
 }
 
+.header-pinned {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    transition: all .5s;
+}
+
+.wow {
+    animation-duration: 1.2s !important;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 /***********.bg-[name] *************/
 .bg-background {
     background-color: var(--background) !important;
@@ -334,6 +358,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .border-secondary {
     border: 1px solid var(--secondary) !important;
+}
+
+.border-destructive {
+    border: 1px solid var(--destructive) !important;
 }
 
 /*********** amim  *********/

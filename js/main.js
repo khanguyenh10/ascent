@@ -1,3 +1,23 @@
+
+// --------- sticky header on scroll start
+const header = document.getElementById("header")
+const top_header = document.getElementById("top-header")
+
+let prevScrollpos = window.scrollY;
+window.onscroll = function () {
+    let currentScrollPos = window.scrollY;
+
+    if (prevScrollpos > currentScrollPos && currentScrollPos > header.clientHeight) {
+        header.style.top = top_header ? `-${top_header.clientHeight}px` : '0px';
+        header.classList.add("header-pinned")
+    } else {
+        header.style.top = `-${header.clientHeight}px`;
+        header.classList.remove("header-pinned")
+    }
+    prevScrollpos = currentScrollPos;
+}
+// --------- sticky header on scroll end
+
 // Khởi tạo một đối tượng Swiper mới, gắn với phần tử có id "serviceSwiper"
 var swiper = new Swiper("#serviceSwiper", {
     autoplay: {
@@ -77,3 +97,6 @@ var swiper = new Swiper("#testimonialSwiper", {
         },
     },
 });
+new WOW({
+    animateClass: 'animate__animated'
+}).init();

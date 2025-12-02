@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascent - Blog details</title>
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SVG Icon -->
+    <link rel="stylesheet" href="./css/icon/style.css">
+    <!-- Thêm Animate.css từ CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!--B1: Chèn thư viện (css [trên thẻ heade] và js [trước khi đóng thẻ body])-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--Backtotop CSS -->
+    <link rel="stylesheet" href="./css/backtoTop.css">
+    <!-- Thêm WOW.js từ CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- blog css -->
+    <link rel="stylesheet" href="./css/blog.css">
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-top bg-destructive d-none d-md-block" id="top-header">
+            <div class="container">
+                <ul class="py-2 list-unstyled d-flex gap-3 text-white m-0">
+                    <li>
+                        <a href="tel:(629) 555-0129">(629) 555-0129</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li>
+                        6391 Elgin St. Celina, 10299
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-menu">
+            <nav class="navbar py-3 navbar-expand-lg navbar-light bg-white">
+                <div class="container">
+                    <a class="navbar-brand fs-3 fw-bold" href="#">
+                        <img src="./img/logo.png" alt="...">
+                        <span>Ascent</span>
+                    </a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav gap-2 ms-auto me-5 pe-3 mb-lg-0 fw-bold d-none d-xl-flex">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                                <ul class="navbar-nav-sub list-unstyled shadow-lg">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./services.html">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./service-details.html">Service Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog </a>
+                                <ul class="navbar-nav-sub list-unstyled shadow-lg">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./blog.html">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./blog-details.html">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                                <ul class="navbar-nav-sub list-unstyled shadow-lg">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./services.html">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./service-details.html">Service Details</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./faq.html">Faq</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="./contact.html"
+                                class="btn px-4 py-2_5 bg-secondary text-white btn-animate btn-animate-secondary">Get a
+                                Quote</a>
+                        </div>
+
+                    </div>
+                    <div class="d-flex gap-3 align-items-center">
+                        <div>
+                            <a href="./contact.html"
+                                class="btn px-4 py-2_5 bg-secondary text-white btn-animate btn-animate-secondary d-none d-sm-block  d-lg-none">Get
+                                a
+                                Quote</a>
+                        </div>
+                        <button class="navbar-toggler border-0  d-flex flex-column align-items-end d-xl-none "
+                            type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                            aria-controls="offcanvasExample">
+                            <span class="bg-muted mb-1" style="height: 3px; width: 20px;"></span>
+                            <span class="bg-muted mb-1" style="height: 3px; width: 30px;"></span>
+                            <span class="bg-muted mb-1" style="height: 3px; width: 20px;"></span>
+                        </button>
+                    </div>
+
+
+                </div>
+            </nav>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="" class="d-flex align-items-center gap-1">
+                                <img src="./img/logo.png" alt="img">
+                                <span class="fs-3 fw-bold  ">Ascent</span>
+                            </a>
+
+                        </div>
+                    </h5>
+                    <button type="button" class="btn-close bg-transparent" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        <div style="width: 40px; height: 40px;"
+                            class="bg-primary  text-cream-foreground d-flex align-items-center justify-content-center rounded-2 offcanvaClose">
+                            <i class="fa-solid fa-xmark text-xl"></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="list-unstyled nav-menu-mobile">
+                        <li><a href="#" class="d-flex justify-content-between align-items-center">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li><a href="./about.html" class="d-flex justify-content-between align-items-center">
+                                <span>About us</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu"> <a class="d-flex justify-content-between align-items-center"
+                                data-bs-toggle="collapse" href="#Services" aria-expanded="false"
+                                aria-controls="Services">
+                                <span>
+                                    Services
+                                </span>
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                            <div class="collapse " id="Services">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./services.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Services</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./service-details.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Service Details</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li> <a class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                href="#Blog" aria-expanded="false" aria-controls="Blog">
+                                <span>
+                                    Blog
+                                </span>
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                            <div class="collapse " id="Blog">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./blog.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Blog</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./blog-details.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Blog Details</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li> <a class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                href="#Page" aria-expanded="false" aria-controls="Page">
+                                <span>
+                                    Page
+                                </span>
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                            <div class="collapse " id="Page">
+                                <ul class="list-unstyled">
+                                    <li><a href="./about.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>About us</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./services.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Services</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./service-details.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Service Details</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./portfolio.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Portfolio</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./faq.html"
+                                            class="d-flex justify-content-between align-items-center ps-3">
+                                            <span>Faqs</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="d-flex justify-content-between align-items-center">
+                                <span>Contact us</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <div>
+                            <h4 class="fs-5 fw-bold " style="color: #385469;">Contact Info</h4>
+                            <ul class="mt-3 d-flex flex-column gap-3 list-unstyled">
+                                <li>
+                                    <p>
+                                        <i class="fa-solid fa-phone text-primary-foreground"></i> <a href=""
+                                            class="ml-2.5">(629) 555-0129</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa-solid fa-envelope text-primary-foreground"></i> <a href=""
+                                            class="ml-2.5">info@example.com</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <i class="fa-solid fa-location-dot text-primary-foreground"></i> <span
+                                            class="ml-2.5">6391 Elgin St. Celina, 10299</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-3">
+                            <a href="" class="bg-primary text-cream-foreground rounded-3 text-center w-100 btn">
+                                Get A Quote <span><i class="fa-solid fa-arrow-right"></i></span> </a>
+                        </div>
+                        <ul class="d-flex align-items-center gap-3 mt-4 list-unstyled">
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-facebook-f "></i></a></li>
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="banner py-5 bg-warm position-relative z-0 breadcrumb mb-5">
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col-md-5">
+                    <div class="d-flex flex-column flex-xm-row align-items-center">
+                        <h1 class="display-2 fw-bold">Blog details</h1>
+                        <ul class="list-unstyled d-flex gap-4">
+                            <li><a href="" class="fs-3 fw-bold text-muted-foreground">Home</a></li>
+                            <li><a href="" class="fs-3  fw-bold text-muted-foreground">Blog details</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3"></div>
+                <div class="col-md-4">
+                    <div class="position-relative">
+                        <img src="./img/shapes/bread-cat.png" alt="cat-img" class="position-absolute   animate-up-down"
+                            style="left: -30px; bottom: 1.25rem;">
+                        <img src="./img/shapes/bread-thumb.png" alt="thumb-img" class="">
+                        <img src="./img/shapes/bread-child.png" alt="child-img"
+                            class="position-absolute bottom-0 right-0 animate-left-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="content py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 mb-4">
+                    <div>
+                        <div class="content wow animate__fadeInUp">
+                            <img src="./img/blog/blog-details-1.png" alt="blog-img-1" class="w-100 card-img-top">
+                            <div class=" d-flex justify-items-center gap-3 gap-md-5 mt-4 flex-wrap">
+                                <p class="ms-3">January 19, 2024 </p>
+                                <p>By admin
+                                </p>
+                                <p>Comments <span>(05)</span> </p>
+                            </div>
+                            <h4 class="card-title fs-2 fw-bold mb-3">Unlock your potential with
+                                education
+                                ower
+                                yourself
+                                the
+                                na
+                                through learning.
+                            </h4>
+                            <p>IT Technology is a rapidly evolving field that encompasses a wide range of computer-rela
+                                Technology is a rapidly ya evolving field that encompasses a wide range of
+                                computer-related technologies and the services. From software thr development to network
+                                administrationtechnologies most of a man
+
+                            </p>
+
+                            <blockquote class="shadow-lg  px-5  py-4 my-5 rounded-3">
+                                <img src="./img/blog/blog-qute.png" alt="blog-qute">
+                                <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and type setting
+                                    industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                    an
+                                    unknown printer took a galley of type and scrambled loren ipsum</p>
+                                <h4 class="fs-5 fw-bold  mt-4">Fahad Hossain<span class="text-green-foreground">_</span>
+                                </h4>
+                            </blockquote>
+                            <div>
+                                <div class="d-flex justify-content-between gap-3">
+                                    <div>
+                                        <img src="./img/blog/blog-details-2.png" alt="blog-details-2">
+                                    </div>
+                                    <div>
+                                        <img src="./img/blog/blog-details-3.png" alt="blog-details-3">
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p>Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere
+                                        viverra .Aliquam erosjust posuer lobortis viverra laoreet augue mattis fermentum
+                                        ullamcAliquam eros justo, posuere loborti viverra laoreet matti ullamcorper
+                                        posuere viverra .Aliquam erosjust posuer lobortis viverra laoreet augue mattis
+                                        fermentum ullamcorper viverra laoreetAliquam eros justo, posuere loborti viverra
+                                        laoreet matti ullamcorper posuere viverra .Aliquam erosjust posuer lobortis
+                                        viverra laoreet augue mattis fermentum ullamcorper viverra laoreetorper viverra
+                                        laoreet</p>
+                                    <div class="mt-4">
+                                        <div class="row ">
+                                            <div class="col-md-6 mb-3">
+                                                <div class="d-flex align-items-center gap-2"> <span
+                                                        style="width: 16px;height: 16px;"
+                                                        class=" rounded-circle d-flex align-items-center justify-content-center bg-destructive text-cream-foreground"><i
+                                                            class="fa-solid fa-check"
+                                                            style="font-size: 10px;"></i></span>
+                                                    Knowledge is the
+                                                    key education is the door</div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="d-flex align-items-center gap-2"> <span
+                                                        style="width: 16px;height: 16px;"
+                                                        class=" rounded-circle d-flex align-items-center justify-content-center bg-destructive text-cream-foreground"><i
+                                                            class="fa-solid fa-check"
+                                                            style="font-size: 10px;"></i></span>
+                                                    Discover the power
+                                                    of education.</div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="d-flex align-items-center gap-2"> <span
+                                                        style="width: 16px;height: 16px;"
+                                                        class=" rounded-circle d-flex align-items-center justify-content-center bg-destructive text-cream-foreground"><i
+                                                            class="fa-solid fa-check"
+                                                            style="font-size: 10px;"></i></span>
+                                                    Education opens
+                                                    doors to opportunities, fosters </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="d-flex align-items-center gap-2"> <span
+                                                        style="width: 16px;height: 16px;"
+                                                        class=" rounded-circle d-flex align-items-center justify-content-center bg-destructive text-cream-foreground"><i
+                                                            class="fa-solid fa-check"
+                                                            style="font-size: 10px;"></i></span>
+                                                    Expand your
+                                                    horizons with education.</div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="fs-4 fw-semibold">Tags:</h3>
+                            <div class="mt-4 d-flex flex-wrap gap-3">
+                                <a href="#" class="text-foreground bg-warm px-2 py-1 rounded-3">All Project</a>
+                                <a href="#" class="text-foreground bg-warm px-2 py-1 rounded-3">Edu Connect</a>
+                                <a href="#" class="text-foreground bg-warm px-2 py-1 rounded-3">Smart Academy</a>
+                            </div>
+                        </div>
+                        <div class="mt-5 d-flex flex-md-row flex-column gap-5 justify-content-md-between align-items-center pt-4 pb-4 border border-start-0 border-end-0"
+                            style="border-color: #f2f2f2;">
+                            <a href="" class="fs-5 fw-bold  d-flex gap-2 align-items-center font-jost  ">
+                                <span class=""><i class="fa-solid fa-angle-left"></i></span> Previous post</a>
+                            <ul class="d-flex items-center gap-3 list-unstyled ">
+                                <li><a href="" style="width: 40px; height: 40px;"
+                                        class="rounded-circle d-flex align-items-center justify-content-center border border-destructive text-destructive "><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="" style="width: 40px; height: 40px;"
+                                        class="rounded-circle d-flex align-items-center justify-content-center border border-destructive text-destructive "><i
+                                            class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="" style="width: 40px; height: 40px;"
+                                        class="rounded-circle d-flex align-items-center justify-content-center border border-destructive text-destructive "><i
+                                            class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="" style="width: 40px; height: 40px;"
+                                        class="rounded-circle d-flex align-items-center justify-content-center border border-destructive text-destructive "><i
+                                            class="fa-brands fa-pinterest-p"></i></a></li>
+                            </ul>
+                            <a href="" class="fs-5 fw-bold  d-flex gap-2 align-items-center font-jost ">Next
+                                post <span class=""><i class="fa-solid fa-angle-right"></i></span></a>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="fs-3 fw-bold font-nunito">Write your comment
+                            </h3>
+                            <form action="#">
+                                <div class="row mt-4">
+                                    <div class="col-xl-6 mb-4">
+                                        <input type="text" placeholder="Your Name" class="form-control py-3"
+                                            name="name">
+                                    </div>
+                                    <div class="col-xl-6 mb-4">
+                                        <input type="email" placeholder="Your Email" class="form-control py-3"
+                                            name="email">
+                                    </div>
+                                </div>
+
+                                <div class="row ">
+                                    <div class="col-xl-12 mb-5">
+                                        <textarea rows="5" placeholder="Write your Message here"
+                                            class="form-control py-3" name="message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12 mb-4">
+                                        <button
+                                            class="btn  px-4 py-3 overflow-hidden rounded-pill bg-primary text-white btn-animate btn-animate-green   "><span>Send
+                                                now
+                                                now</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-xl-4 mb-4">
+                    <div class="card p-3 p-lg-5 border-0 shadow-sm  mb-5 wow animate__fadeInUp" data-wow-delay=".3s">
+                        <img src="./img/blog/user.png" alt="user img" width="120">
+                        <div class="card-body p-0 mt-3">
+                            <h4 class="card-title font-nunito fw-bold">Nafiz Bhuiyan</h4>
+                            <p class="card-text">It is a long established fact that a reader will be distracted by the
+                                read content of a page when looking at its layout</p>
+                            <ul class="mt-4 mb-0 list-unstyled d-flex gap-2">
+                                <li>
+                                    <a href="#"
+                                        class="rounded d-flex align-items-center justify-content-center bg-warm "
+                                        style="width: 36px; height: 36px;"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="rounded d-flex align-items-center justify-content-center bg-warm "
+                                        style="width: 36px; height: 36px;"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="rounded d-flex align-items-center justify-content-center bg-warm "
+                                        style="width: 36px; height: 36px;"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="rounded d-flex align-items-center justify-content-center bg-warm "
+                                        style="width: 36px; height: 36px;"><i class="fa-brands fa-pinterest-p"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card p-3 p-lg-5 border-0 shadow-sm  mb-5 wow animate__fadeInUp" data-wow-delay=".4s">
+                        <div class="card-body p-0">
+                            <h4 class="card-title font-nunito fw-bold fs-3">Search<span class="text-secondary">_</span>
+                            </h4>
+                            <input type="text" placeholder="Search..."
+                                class="rounded-3 mt-4 border border-secondary-subtle  ps-3 py-3  w-100 ">
+                        </div>
+                    </div>
+                    <div class="card p-3 p-lg-5 border-0 shadow-sm  mb-5 wow animate__fadeInUp" data-wow-delay=".5s">
+                        <div class="card-body p-0">
+                            <h4 class="card-title font-nunito fw-bold fs-3">Category<span
+                                    class="text-secondary">_</span> </h4>
+                            <ul class="mt-4 list-unstyled">
+                                <li><a href="#"
+                                        class="text-foreground px-3 py-2 border border-secondary-subtle mb-3 rounded-3 d-flex gap-2 justify-content-between w-100"><span>
+                                            EduTech Solutions</span><span>01</span></a></li>
+                                <li><a href="#"
+                                        class="text-foreground px-3 py-2 border border-secondary-subtle mb-3 rounded-3 d-flex gap-2 justify-content-between w-100"><span>
+                                            SmartAcademy</span><span>07</span></a></li>
+                                <li><a href="#"
+                                        class="text-foreground px-3 py-2 border border-secondary-subtle mb-3 rounded-3 d-flex gap-2 justify-content-between w-100"><span>
+                                            KnowledgeHub</span><span>02</span></a></li>
+                                <li><a href="#"
+                                        class="text-foreground px-3 py-2 border border-secondary-subtle mb-3 rounded-3 d-flex gap-2 justify-content-between w-100"><span>
+                                            Specialist</span><span>04</span></a></li>
+                                <li><a href="#"
+                                        class="text-foreground px-3 py-2 border border-secondary-subtle mb-3 rounded-3 d-flex gap-2 justify-content-between w-100"><span>
+                                            Education is the door</span><span>03</span></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="card p-3 p-lg-5 border-0 shadow-sm  mb-5 wow animate__fadeInUp" data-wow-delay=".6s">
+                        <div class="card-body p-0">
+                            <h4 class="card-title font-nunito fw-bold fs-3">Recent post<span
+                                    class="text-secondary">_</span>
+                            </h4>
+                            <ul class="mt-4 list-unstyled">
+                                <li class="border border-secondary-subtle p-3 rounded-3 mb-3">
+                                    <p class="mb-1 d-flex align-items-center gap-2 "><small>Category</small> <span
+                                            style="width: 6px;height: 6px;"
+                                            class="bg-green d-inline-block rounded-circle"></span>
+                                        <small>Comments 0</small> </p>
+                                    <a class="fs-5 fw-bold font-jost" href="#">Expand your horizons with Most Of
+                                        education</a>
+                                </li>
+                                <li class="border border-secondary-subtle p-3 rounded-3 mb-3">
+                                    <p class="mb-1 d-flex align-items-center gap-2 "><small>Category</small> <span
+                                            style="width: 6px;height: 6px;"
+                                            class="bg-green d-inline-block rounded-circle"></span>
+                                        <small>Comments 0</small> </p>
+                                    <a class="fs-5 fw-bold font-jost" href="#">Invest in education invest in yourself
+                                        Best</a>
+                                </li>
+                                <li class="border border-secondary-subtle p-3 rounded-3 mb-3">
+                                    <p class="mb-1 d-flex align-items-center gap-2 "><small>Category</small> <span
+                                            style="width: 6px;height: 6px;"
+                                            class="bg-green d-inline-block rounded-circle"></span>
+                                        <small>Comments 0</small> </p>
+                                    <a class="fs-5 fw-bold font-jost" href="#">Empower yourself through an learning</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="card p-3 p-lg-5 border-0 shadow-sm  mb-5 wow animate__fadeInUp" data-wow-delay=".7s">
+                        <div class="card-body p-0">
+                            <h4 class="card-title font-nunito fw-bold fs-3">Tags<span class="text-secondary">_</span>
+                            </h4>
+                            <div class="mt-4 d-flex flex-wrap gap-3">
+                                <a href="#" class="text-foreground bg-warm px-2 py-1 rounded-3">LearnWell</a><a href="#"
+                                    class="text-foreground bg-warm px-2 py-1 rounded-3">Edu Pro</a><a href="#"
+                                    class="text-foreground bg-warm px-2 py-1 rounded-3">Study Boost</a><a href="#"
+                                    class="text-foreground bg-warm px-2 py-1 rounded-3">Academy</a><a href="#"
+                                    class="text-foreground bg-warm px-2 py-1 rounded-3">LearnEase</a><a href="#"
+                                    class="text-foreground bg-warm px-2 py-1 rounded-3">BrainWave</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="stayWithUs py-5 bg-warm  position-relative z-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <div class="title" style="max-width: 630px;">
+                        <p class="mb-0 text-dark wow animate__fadeInUp">Stay With Us</p>
+                        <h2 class="wow animate__fadeInUp">The path to success starts with educationd</h2>
+                    </div>
+                    <p class="my-4">Lorem ipsum dolor sit amet consectetur adipiscing elit platea pharetra, nostra
+                        mattis hendrerit proin mollis pretium facilisi in, ligula volutpat</p>
+                    <button class="btn px-4 py-2_5 rounded-pill bg-primary text-white btn-primary border-primary">Learn
+                        More</button>
+                </div>
+                <div class="col-xl-3"></div>
+                <div class="col-xl-3">
+                    <img src="./img/newsletter/stay-thumb.png" alt="tree-img">
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute start-0 bottom-0 " style="z-index: -1;">
+            <img src="./img/newsletter/stay-shape.png" alt="stay-shape">
+        </div>
+    </section>
+    <section class="footer pt-5 footer-2 position-relative z-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xl-4 mb-4">
+                    <div class="wow animate__fadeInUp" data-wow-delay=".3s">
+                        <a href="" class="flex items-center gap-1">
+                            <img src="./img/logo.png" alt="img">
+                            <span class="fw-bold fs-2 ">Ascent</span>
+                        </a>
+                        <p class="mt-3">Yes, there are many notable ma corporate the a od businesses Informati worldwide
+
+                        </p>
+                        <ul class="d-flex align-items-center gap-3 mt-4 list-unstyled">
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-facebook-f "></i></a></li>
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-xl-2 mb-4">
+                    <div class="wow animate__fadeInUp" data-wow-delay=".5s">
+                        <div class="d-inline-block">
+                            <h3 class="fw-semibold">Pages</h3>
+                            <span style="width: 130%; height: 1px;"
+                                class="d-block mt-2 bg-background position-relative ">
+                                <span
+                                    class="position-absolute  end-0 top-50  absolute-y-center  bg-background   rounded-circle"
+                                    style="height: 6px; width: 6px;"></span>
+                            </span>
+                        </div>
+
+                        <ul class="d-flex flex-column gap-3 pt-3 list-unstyled list-pages anim-left">
+                            <li><a href="" class="">About Us</a></li>
+                            <li><a href="" class="">Latest Service</a></li>
+                            <li><a href="" class="">Latest Blog And News</a></li>
+                            <li><a href="" class="">FAQ</a></li>
+                            <li><a href="" class="">Our Creative Team Member</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-xl-2 mb-4">
+                    <div class="wow animate__fadeInUp" data-wow-delay=".7s">
+                        <div class="d-inline-block">
+                            <h3 class="fw-semibold">Contact</h3>
+                            <span style="width: 130%; height: 1px;"
+                                class="d-block mt-2 bg-background position-relative ">
+                                <span
+                                    class="position-absolute  end-0 top-50  absolute-y-center  bg-background   rounded-circle"
+                                    style="height: 6px; width: 6px;"></span>
+                            </span>
+                        </div>
+                        <ul class="d-flex flex-column gap-3 pt-3 list-unstyled anim-left">
+                            <li>
+                                <p class="d-flex  align-items-center gap-4">
+                                    <span class="ms-3">1179
+                                        KFC Road, Lisbon, Portugal</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="d-flex  align-items-center gap-4">
+                                    <a class="ms-3" href="mailto:Sakib23@gmail.com">Sakib23@gmail.com</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="d-flex  align-items-center gap-4">
+                                    <a class="ms-3" href="tel:012547892354">012547892354</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-xl-4 mb-4">
+                    <div class="wow animate__fadeInUp" data-wow-delay=".7s">
+                        <div class="d-inline-block">
+                            <h3 class="fw-semibold " style="white-space: nowrap;">Our Newsletter
+                            </h3>
+                            <span style="width: 130%; height: 1px;"
+                                class="d-block mt-2 bg-background position-relative ">
+                                <span
+                                    class="position-absolute  end-0 top-50  absolute-y-center  bg-background   rounded-circle"
+                                    style="height: 6px; width: 6px;"></span>
+                            </span>
+                        </div>
+                        <p class="pt-3">
+                            Subscribe our newsletter to get our latest update
+                        </p>
+                        <div class="position-relative  mt-5">
+                            <input type="text" placeholder="Enter Your Email"
+                                class="rounded-3 border-0 text-white  ps-3 py-3  w-100 " style="background: #FFFFFF1A;">
+                            <button style="right: 10px;"
+                                class="btn px-4 py-2 rounded-3 bg-primary text-white btn-animate btn-animate-green  position-absolute  top-50 absolute-y-center d-flex gap-3 align-items-center">
+                                <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="row mt-5 pb-4 opacity-75">
+                <div class="col-xl-6">
+                    <p class="wow animate__fadeInLeft" data-wow-delay=".3s">© Yoursitename 2024 | All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-xl-6">
+                    <ul class="d-flex   justify-content-xl-end align-items-center gap-2 gap-sm-5  fadeInRight list-unstyled wow animate__fadeInRight"
+                        data-wow-delay=".3s">
+                        <li><a href="">Trams &amp; Condition</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute  top-50 absolute-y-center  " style="left: 45%;">
+            <img src="./img/shapes/scissors.svg" alt="img">
+        </div>
+        <div class="position-absolute  top-50 absolute-y-center animate-up-down" style="right: 68px;">
+            <img src="./img/shapes/apple.svg" alt="img">
+        </div>
+    </section>
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous">
+    </script>
+    <!--thư viện Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/carousel-swiper.js"></script>
+    <!-- BacktoTop -->
+    <script src="./js/backtoTop/util.js"></script>
+    <script src="./js/backtoTop/main.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

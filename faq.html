@@ -29,8 +29,8 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-top bg-destructive d-none d-md-block">
+    <header class="header" id="header">
+        <div class="header-top bg-destructive d-none d-md-block" id="top-header">
             <div class="container">
                 <ul class="py-2 list-unstyled d-flex gap-3 text-white m-0">
                     <li>
@@ -78,7 +78,7 @@
                                         <a class="nav-link" href="./blog.html">Blog</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="./blog.html">Blog Details</a>
+                                        <a class="nav-link" href="./blog-details.html">Blog Details</a>
                                     </li>
                                 </ul>
                             </li>
@@ -101,7 +101,7 @@
                                         <a class="nav-link" href="./portfolio.html">Portfolio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="./Learn.html">Contact</a>
+                                        <a class="nav-link" href="./contact.html">Contact</a>
                                     </li>
                                 </ul>
                             </li>
@@ -312,16 +312,18 @@
     <section class="banner py-5 bg-warm position-relative z-0 breadcrumb">
         <div class="container">
             <div class="row align-items-center ">
-                <div class="col-xl-4">
-                    <h1 class="display-2 fw-bold">Faq's</h1>
-                    <ul class="list-unstyled d-flex gap-4">
-                        <li><a href="" class="fs-3 fw-bold text-muted-foreground">Home</a></li>
-                        <li><a href="" class="fs-3  fw-bold text-muted-foreground">Faq's</a></li>
-                    </ul>
+                <div class="col-md-5">
+                    <div class="d-flex flex-column flex-xm-row align-items-center">
+                        <h1 class="display-2 fw-bold">Faq's</h1>
+                        <ul class="list-unstyled d-flex gap-4">
+                            <li><a href="" class="fs-3 fw-bold text-muted-foreground">Home</a></li>
+                            <li><a href="" class="fs-3  fw-bold text-muted-foreground">Faq's</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="col-xl-4"></div>
-                <div class="col-xl-4">
+                <div class="col-md-3"></div>
+                <div class="col-md-4">
                     <div class="position-relative">
                         <img src="./img/shapes/bread-cat.png" alt="cat-img" class="position-absolute   animate-up-down"
                             style="left: -30px; bottom: 1.25rem;">
@@ -342,9 +344,9 @@
                 </div>
                 <div class="col-xl-6 mb-4">
                     <div class="title" style="max-width: 520px;">
-                        <p class="mb-0 text-secondary">
+                        <p class="mb-0 text-secondary wow animate__fadeInUp">
                             Some Faq</p>
-                        <h2>Empowering Children Through Education Playful Mind</h2>
+                        <h2 class="wow animate__fadeInUp">Empowering Children Through Education Playful Mind</h2>
                     </div>
                     <div class="accordion mt-5" id="accordionExample">
                         <div class="accordion-item border rounded-2 mb-4">
@@ -428,8 +430,8 @@
             <div class="row align-items-center">
                 <div class="col-xl-6">
                     <div class="title" style="max-width: 630px;">
-                        <p class="mb-0 text-dark">Stay With Us</p>
-                        <h2>The path to success starts with educationd</h2>
+                        <p class="mb-0 text-dark wow animate__fadeInUp">Stay With Us</p>
+                        <h2 class="wow animate__fadeInUp">The path to success starts with educationd</h2>
                     </div>
                     <p class="my-4">Lorem ipsum dolor sit amet consectetur adipiscing elit platea pharetra, nostra
                         mattis hendrerit proin mollis pretium facilisi in, ligula volutpat</p>
@@ -450,95 +452,109 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-xl-4 mb-4">
-                    <a href="" class="flex items-center gap-1">
-                        <img src="./img/logo.png" alt="img">
-                        <span class="fw-bold fs-2 ">Ascent</span>
-                    </a>
-                    <p class="mt-3">Yes, there are many notable ma corporate the a od businesses Informati worldwide
+                    <div class="wow animate__fadeInUp" data-wow-delay=".3s">
+                        <a href="" class="flex items-center gap-1">
+                            <img src="./img/logo.png" alt="img">
+                            <span class="fw-bold fs-2 ">Ascent</span>
+                        </a>
+                        <p class="mt-3">Yes, there are many notable ma corporate the a od businesses Informati worldwide
 
-                    </p>
-                    <ul class="d-flex align-items-center gap-3 mt-4 list-unstyled">
-                        <li><a href="" style="width: 40px;height: 40px;"
-                                class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
-                                    class="fa-brands fa-facebook-f "></i></a></li>
-                        <li><a href="" style="width: 40px;height: 40px;"
-                                class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
-                                    class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="" style="width: 40px;height: 40px;"
-                                class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
-                                    class="fa-brands fa-linkedin"></i></a></li>
-                        <li><a href="" style="width: 40px;height: 40px;"
-                                class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
-                                    class="fa-brands fa-pinterest-p"></i></a></li>
-                    </ul>
+                        </p>
+                        <ul class="d-flex align-items-center gap-3 mt-4 list-unstyled">
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-facebook-f "></i></a></li>
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="" style="width: 40px;height: 40px;"
+                                    class="rounded-3  d-flex align-items-center justify-content-center text-muted-foreground bg-green "><i
+                                        class="fa-brands fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+
                 </div>
                 <div class="col-sm-6 col-xl-2 mb-4">
-                    <div class="d-inline-block">
-                        <h3 class="fw-semibold">Pages</h3>
-                        <span style="width: 130%; height: 1px;" class="d-block mt-2 bg-background position-relative ">
-                            <span
-                                class="position-absolute  end-0 top-50  absolute-y-center  bg-background   rounded-circle"
-                                style="height: 6px; width: 6px;"></span>
-                        </span>
+                    <div class="wow animate__fadeInUp" data-wow-delay=".5s">
+                        <div class="d-inline-block">
+                            <h3 class="fw-semibold">Pages</h3>
+                            <span style="width: 130%; height: 1px;"
+                                class="d-block mt-2 bg-background position-relative ">
+                                <span
+                                    class="position-absolute  end-0 top-50  absolute-y-center  bg-background   rounded-circle"
+                                    style="height: 6px; width: 6px;"></span>
+                            </span>
+                        </div>
+
+                        <ul class="d-flex flex-column gap-3 pt-3 list-unstyled list-pages anim-left">
+                            <li><a href="" class="">About Us</a></li>
+                            <li><a href="" class="">Latest Service</a></li>
+                            <li><a href="" class="">Latest Blog And News</a></li>
+                            <li><a href="" class="">FAQ</a></li>
+                            <li><a href="" class="">Our Creative Team Member</a></li>
+                        </ul>
                     </div>
-                    4
-                    <ul class="d-flex flex-column gap-3 pt-3 list-unstyled list-pages anim-left">
-                        <li><a href="" class="">About Us</a></li>
-                        <li><a href="" class="">Latest Service</a></li>
-                        <li><a href="" class="">Latest Blog And News</a></li>
-                        <li><a href="" class="">FAQ</a></li>
-                        <li><a href="" class="">Our Creative Team Member</a></li>
-                    </ul>
+
                 </div>
                 <div class="col-sm-6 col-xl-2 mb-4">
-                    <div class="d-inline-block">
-                        <h3 class="fw-semibold">Contact</h3>
-                        <span style="width: 130%; height: 1px;" class="d-block mt-2 bg-background position-relative ">
-                            <span
-                                class="position-absolute  end-0 top-50  absolute-y-center  bg-background   rounded-circle"
-                                style="height: 6px; width: 6px;"></span>
-                        </span>
+                    <div class="wow animate__fadeInUp" data-wow-delay=".7s">
+                        <div class="d-inline-block">
+                            <h3 class="fw-semibold">Contact</h3>
+                            <span style="width: 130%; height: 1px;"
+                                class="d-block mt-2 bg-background position-relative ">
+                                <span
+                                    class="position-absolute  end-0 top-50  absolute-y-center  bg-background   rounded-circle"
+                                    style="height: 6px; width: 6px;"></span>
+                            </span>
+                        </div>
+                        <ul class="d-flex flex-column gap-3 pt-3 list-unstyled anim-left">
+                            <li>
+                                <p class="d-flex  align-items-center gap-4">
+                                    <span class="ms-3">1179
+                                        KFC Road, Lisbon, Portugal</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="d-flex  align-items-center gap-4">
+                                    <a class="ms-3" href="mailto:Sakib23@gmail.com">Sakib23@gmail.com</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="d-flex  align-items-center gap-4">
+                                    <a class="ms-3" href="tel:012547892354">012547892354</a>
+                                </p>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="d-flex flex-column gap-3 pt-3 list-unstyled anim-left">
-                        <li>
-                            <p class="d-flex  align-items-center gap-4">
-                                <span class="ms-3">1179
-                                    KFC Road, Lisbon, Portugal</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="d-flex  align-items-center gap-4">
-                                <a class="ms-3" href="mailto:Sakib23@gmail.com">Sakib23@gmail.com</a>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="d-flex  align-items-center gap-4">
-                                <a class="ms-3" href="tel:012547892354">012547892354</a>
-                            </p>
-                        </li>
-                    </ul>
+
                 </div>
                 <div class="col-md-6 col-xl-4 mb-4">
+                    <div class="wow animate__fadeInUp" data-wow-delay=".7s">
+                        <div class="d-inline-block">
+                            <h3 class="fw-semibold " style="white-space: nowrap;">Our Newsletter
+                            </h3>
+                            <span style="width: 130%; height: 1px;"
+                                class="d-block mt-2 bg-background position-relative ">
+                                <span
+                                    class="position-absolute  end-0 top-50  absolute-y-center  bg-background   rounded-circle"
+                                    style="height: 6px; width: 6px;"></span>
+                            </span>
+                        </div>
+                        <p class="pt-3">
+                            Subscribe our newsletter to get our latest update
+                        </p>
+                        <div class="position-relative  mt-5">
+                            <input type="text" placeholder="Enter Your Email"
+                                class="rounded-3 border-0 text-white  ps-3 py-3  w-100 " style="background: #FFFFFF1A;">
+                            <button style="right: 10px;"
+                                class="btn px-4 py-2 rounded-3 bg-primary text-white btn-animate btn-animate-green  position-absolute  top-50 absolute-y-center d-flex gap-3 align-items-center">
+                                <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
 
-                    <div class="d-inline-block">
-                        <h3 class="fw-semibold " style="white-space: nowrap;">Our Newsletter
-                        </h3>
-                        <span style="width: 130%; height: 1px;" class="d-block mt-2 bg-background position-relative ">
-                            <span
-                                class="position-absolute  end-0 top-50  absolute-y-center  bg-background   rounded-circle"
-                                style="height: 6px; width: 6px;"></span>
-                        </span>
-                    </div>
-                    <p class="pt-3">
-                        Subscribe our newsletter to get our latest update
-                    </p>
-                    <div class="position-relative  mt-5">
-                        <input type="text" placeholder="Enter Your Email"
-                            class="rounded-3 border-0 text-white  ps-3 py-3  w-100 " style="background: #FFFFFF1A;">
-                        <button style="right: 10px;"
-                            class="btn px-4 py-2 rounded-3 bg-primary text-white btn-animate btn-animate-green  position-absolute  top-50 absolute-y-center d-flex gap-3 align-items-center">
-                            <i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
 
                 </div>
             </div>
@@ -546,11 +562,12 @@
 
             <div class="row mt-5 pb-4 opacity-75">
                 <div class="col-xl-6">
-                    <p>© Yoursitename 2024 | All Rights Reserved</p>
+                    <p class="wow animate__fadeInLeft" data-wow-delay=".3s">© Yoursitename 2024 | All Rights Reserved
+                    </p>
                 </div>
                 <div class="col-xl-6">
-                    <ul
-                        class="d-flex   justify-content-xl-end align-items-center gap-2 gap-sm-5  fadeInRight list-unstyled">
+                    <ul class="d-flex   justify-content-xl-end align-items-center gap-2 gap-sm-5  fadeInRight list-unstyled wow animate__fadeInRight"
+                        data-wow-delay=".3s">
                         <li><a href="">Trams &amp; Condition</a></li>
                         <li><a href="">Privacy Policy</a></li>
                         <li><a href="">Contact Us</a></li>
